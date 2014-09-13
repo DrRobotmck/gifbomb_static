@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>gifbomb</title>
+  <link rel="stylesheet" href="public/styles/styles.css">
+  <script src='bower_components/jquery/dist/jquery.js'></script>
+  <script src='bower_components/jquery-ui/jquery-ui.js'></script>
+  <script src='bower_components/handlebars/handlebars.js'></script>
+  <script src='bower_components/underscore/underscore.js'></script>
+  <script src='bower_components/backbone/backbone.js'></script>
+  <script src='public/js/app.js'></script>
+  <script src='public/js/backbone/GifModel.js'></script>
+  <script src='public/js/backbone/GifsCollection.js'></script>
+  <script src='public/js/backbone/GifSearchView.js'></script>
+  <script src='public/js/backbone/GifListView.js'></script>
+  <script src='public/js/backbone/GifResultView.js'></script>
+  <script src='public/js/backbone/GifInfoView.js'></script>
+</head>
+<body>
+
+  <header id='header'>
+    <div id='title'>
+      <span>gifb</span><img src="http://www.mariobrothersonline.net/mario-images/animations/ani_smb3_bob-omb.gif" alt="bob omb"><span>mb</span>
+    </div>
+    <div id='search'>
+      <input type="text" name='search' placeholder='search' id='user-input'>
+      <span id='enter'>enter</span>
+    </div>
+  </header>
+  <section id='results'></section>
+  <section id='main-view'>
+    <h1><<-- Click to view</h1>
+  </section>
+  <footer id='footer'>
+    <p>Made Somewhere in Brooklyn. &copy DrRobotmck</p>
+  </footer>
+  <script type="text/x-handlebars-template" id='single-result'>
+      <img src="{{staticImage}}" alt="" class='gif-single'>
+      <div class='selected'></div>
+  </script>
+  <script type="text/x-handlebars-template" id='full-info'>
+    <div class='full-gif'>
+      <img src="{{originalSize}}" alt="original sized gif">
+    </div>
+    <div class='buttons'>
+      <button class='copy'>COPY</button>
+      <button class='embed'>EMBED</button>
+    </div>
+  </script>
+</body>
+</html>

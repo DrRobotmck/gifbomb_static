@@ -1,0 +1,30 @@
+{
+  "name": "gifbomb",
+  "version": "0.0.0",
+  "authors": [
+    "DrRobotmck <mckenneth.scott@icloud.com>"
+  ],
+  "description": "Dependencies for gifbomb",
+  "main": "index.html",
+  "keywords": [
+    "backbone",
+    "local-storage",
+    "jquery"
+  ],
+  "license": "MIT",
+  "homepage": "www.mckenneth.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery":"latest",
+    "jquery-ui":"latest",
+    "backbone":"latest",
+    "handlebars":"latest"
+  }
+}
